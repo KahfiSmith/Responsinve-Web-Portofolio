@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8" />
@@ -7,10 +7,16 @@
     <title>My Portfolio</title>
 
     <link rel="stylesheet" href="src/output.css" />
+    <style>
+        body::-webkit-scrollbar {
+            width: 0.1em;
+        }
+    </style>
 </head>
 
 <body class="bg-background font-inter text-color">
-    <section id="home" class="pt-36 min-h-screen">
+    <!-- hero section start -->
+    <section id="home" class="pt-36 mb-24">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-6 md:px-8 lg:w-1/2 lg:px-10">
@@ -21,18 +27,82 @@
                         <span class="text-icon">Konsultan</span> Anda Siap Mendengar.
                     </h1>
                     <p class="font-medium mb-12 leading-relaxed text-justify">
-                        Pada platform ini tidak hanya sebagai penyedia layanan profesional, tapi sebagai pendengar yang setia dan empatik. Pendekatan "dari hati ke hati" menyiratkan bahwa interaksi antara konsultan dan pengguna dilakukan dengan kehangatan dan pengertian mendalam.
+                        Pada platform ini tidak hanya sebagai penyedia layanan profesional, tapi sebagai pendengar yang
+                        setia dan empatik. Pendekatan "dari hati ke hati" menyiratkan bahwa interaksi antara konsultan
+                        dan pengguna dilakukan dengan kehangatan dan pengertian mendalam.
                     </p>
                     <a href="#"
-                        class="text-base font-semibold py-3 px-5 bg-teal-600 rounded-md hover:bg-teal-500 trasition duration-300 ease-in-out">Continue</a>
+                        class="text-base font-semibold py-3 px-5 bg-teal-600 rounded-md hover:bg-teal-500 trasition duration-300 ease-in-out">Get
+                        Started</a>
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="mt-10 relative">
                         <img src="img/p.png" alt="" class="max-w-full mx-auto">
                     </div>
+                </div>
+            </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- layanan section start -->
+    <section id="layanan" class="pt-36 pb-32">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-6 md:px-8 lg:px-10">
+                    <h1 class="font-semibold text-2xl mb-20 md:text-3xl lg:text-4xl">Kenapa kamu harus memilih ReLive
+                    </h1>
+                    <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-10">
+                        <div class="grid-layanan">
+                            <div class="flex justify-start gap-6 items-center w-full mb-4">
+                                <div class="grid-layanan-icon">
+                                    <a href="#" class="text-3xl">
+                                        <i data-lucide="audio-lines"></i>
+                                    </a>
+                                </div>
+                                <h2 class="font-semibold md:text-xl">Kesiapan untuk Mendengarkan</h2>
+                            </div>
+                            <p>Ini menegaskan bahwa setiap masalah, besar atau
+                                kecil, penting dan akan ditanggapi dengan serius. Konsultan di platform ini dilatih
+                                untuk mendengarkan secara aktif, memastikan bahwa setiap pengguna merasa didengar dan
+                                dipahami.</p>
+                        </div>
+                        <div class="grid-layanan">
+                            <div class="flex justify-start gap-6 items-center w-full mb-4">
+                                <div class="grid-layanan-icon">
+                                    <a href="#" class="text-3xl">
+                                        <i data-lucide="hand-heart"></i>
+                                    </a>
+                                </div>
+                                <h2 class="font-semibold md:text-xl">Dukungan yang Berkelanjutan</h2>
+                            </div>
+                            <p>Ini
+                                bukan hanya tentang sesi konsultasi tunggal, melainkan tentang membangun hubungan jangka
+                                panjang dimana pengguna dapat merasa nyaman untuk kembali dan mendapatkan bantuan kapan
+                                pun dan dimana pun mereka membutuhkannya.</p>
+                        </div>
+                        <div class="grid-layanan">
+                            <div class="flex justify-start gap-6 items-center w-full mb-4">
+                                <div class="grid-layanan-icon">
+                                    <a href="#" class="text-3xl">
+                                        <i data-lucide="folder-lock"></i>
+                                    </a>
+                                </div>
+                                <h2 class="font-semibold md:text-xl">Keramahan dan Keamanan</h2>
+                            </div>
+                            <p>mencerminkan suasana yang ramah dan penuh keamanan yang ditawarkan oleh platform. Pengguna dijamin dapat berbagi informasi pribadi mereka tanpa kekhawatiran tentang privasi atau penghakiman, yang sangat penting dalam konteks kesehatan mental dan fisik.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
+    <!-- layanan section end -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 
 </html>

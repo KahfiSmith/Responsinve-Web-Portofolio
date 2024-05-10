@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.grid-layanan {
+  @apply flex flex-wrap p-6 rounded-md bg-soft hover:bg-primary transition duration-300 ease-in-out items-start;
+}
+
+.grid-layanan-icon  {
+    @apply w-12 h-12 bg-secondary p-3 flex items-center justify-center rounded-md;
+}

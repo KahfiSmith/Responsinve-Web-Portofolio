@@ -14,13 +14,6 @@ module.exports = {
         soft: "rgb(22, 32, 50)",
         light: "rgb(248, 250, 252)",
       },
-      fontFamily: {
-        inter: ["Inter", "sans-serif"],
-        lora: ["Lora", "sans-serif"],
-      },
-      borderWidth: {
-        1: "1.5px",
-      },
     },
   },
   plugins: [],
