@@ -6,6 +6,10 @@
   @apply flex flex-wrap p-6 rounded-lg bg-soft hover:bg-primary transition duration-300 ease-in-out items-start;
 }
 
-.grid-layanan-icon  {
-    @apply w-12 h-12 bg-secondary p-3 flex items-center justify-center rounded-md;
+.grid-layanan-icon {
+  @apply w-12 h-12 bg-secondary p-3 flex items-center justify-center rounded-md;
+}
+
+.list-artikel {
+  @apply p-5 flex flex-col md:flex-row gap-4 rounded-md mb-4 bg-soft hover:bg-primary;
 }
