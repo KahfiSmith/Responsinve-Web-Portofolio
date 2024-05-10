@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .grid-layanan {
-  @apply flex flex-wrap p-6 rounded-md bg-soft hover:bg-primary transition duration-300 ease-in-out items-start;
+  @apply flex flex-wrap p-6 rounded-lg bg-soft hover:bg-primary transition duration-300 ease-in-out items-start;
 }
 
 .grid-layanan-icon  {
