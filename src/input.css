@@ -11,5 +11,5 @@
 }
 
 .list-artikel {
-  @apply p-5 flex flex-col md:flex-row gap-4 rounded-md mb-4 bg-soft hover:bg-primary;
+  @apply p-5 flex flex-col lg:flex-row gap-4 rounded-md mb-4 bg-soft hover:bg-primary;
 }
