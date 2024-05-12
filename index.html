@@ -1,282 +1,337 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
 
     <link rel="stylesheet" href="src/output.css" />
     <style>
-        body::-webkit-scrollbar {
-            width: 0.1em;
-        }
+      body::-webkit-scrollbar {
+        width: 0.1em;
+      }
     </style>
-</head>
+  </head>
 
-<body class="bg-background font-inter text-color">
+  <body class="bg-background font-inter text-color">
     <!-- navbar start -->
-    <header class="bg-transparent absoilute top-0 left-0 w-full flex items-center z-10">
-        <div class="container">
-            <div class="flex items-center justify-between relative">
-                <div class="px-8 py-6 font-semibold text-lg">
-                    <a href="#home">Re<span class="text-icon">Live</span></a>
-                </div>
-                <div class="px-8 py-6 flex items-center justify-center">
-                    <button id="hamburger" name="hamburger" type="button" class="absolute">
-                        <i data-lucide="menu" id="icon-menu" class="transition ease-in-out duration-300"></i>
-                        <i data-lucide="x" id="icon-close" class="hidden transition ease-in-out duration-300"></i>
-                    </button>
+    <header
+      class="bg-transparent absoilute top-0 left-0 w-full flex items-center z-10"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-8 py-6 font-semibold text-lg">
+            <a href="#home">Re<span class="text-icon">Live</span></a>
+          </div>
+          <div class="px-8 py-6 flex items-center justify-center">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="absolute block"
+            >
+              <i
+                data-lucide="menu"
+                id="icon-menu"
+                class="transition ease-in-out duration-300"
+              ></i>
+              <i
+                data-lucide="x"
+                id="icon-close"
+                class="hidden transition ease-in-out duration-300"
+              ></i>
+            </button>
 
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#home">Home</a>
-                                <a href="#tentang-kami">Tentang kami</a>
-                                <a href="#layanan">Layanan</a>
-                                <a href="#artikel">Artikel</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            <nav
+              id="nav-menu"
+              class="hidden absolute p-4 bg-background rounded-lg max-w-[200px] w-full right-6 top-full border border-border"
+            >
+              <ul class="font-semibold">
+                <li class="group">
+                  <a href="#home" class="group-hover:text-icon">Home</a>
+                </li>
+                <li class="group">
+                  <a href="#tentang-kami" class="group-hover:text-icon"
+                    >Tentang kami</a
+                  >
+                </li>
+                <li class="group">
+                  <a href="#layanan" class="group-hover:text-icon">Layanan</a>
+                </li>
+                <li class="group">
+                  <a href="#artikel" class="group-hover:text-icon">Artikel</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
+      </div>
     </header>
     <!-- navbar end -->
 
     <!-- home section start -->
     <section id="home" class="pt-20 flex justify-center">
-        <div class="container">
-            <div class="w-full self-center px-8 md:px-12 lg:px-20 -mb-5">
-                <h1 class="font-semibold text-2xl mt-3 mb-2 md:text-3xl lg:text-5xl md:text-center">
-                    Berdialog tentang <span class="text-icon">Kesehatan</span>
-                </h1>
-                <h1 class="font-semibold text-2xl mb-4 md:text-3xl lg:text-5xl md:text-center">
-                    Bersama Kami Setiap Langkahnya
-                </h1>
-                <p class="font-normal mb-8 md:text-center lg:text-xl text-justify">
-                    Platform konsultasi online ini berkomitmen untuk memberikan dukungan
-                    berkelanjutan dan penuh perhatian kepada setiap penggunanya dalam
-                    menjaga atau meningkatkan kesehatan mereka.
-                </p>
-                <div class="flex md:justify-center">
-                    <a href="#tentang-kami"
-                        class="text-base font-semibold py-3 px-8 bg-teal-500 rounded-md hover:bg-teal-400 trasition duration-300 ease-in-out lg:text-xl text-white">Lihat
-                        selengkapnya</a>
-                </div>
-            </div>
-            <div class="w-full pb-20">
-                <div class="mt-10">
-                    <img src="img/main1.png" alt="" class="w-full lg:w-2/6 mx-auto" />
-                </div>
-            </div>
+      <div class="container">
+        <div class="w-full self-center px-8 md:px-12 lg:px-20 -mb-5">
+          <h1
+            class="font-semibold text-2xl mt-3 mb-2 md:text-3xl lg:text-5xl md:text-center"
+          >
+            Berdialog tentang <span class="text-icon">Kesehatan</span>
+          </h1>
+          <h1
+            class="font-semibold text-2xl mb-4 md:text-3xl lg:text-5xl md:text-center"
+          >
+            Bersama Kami Setiap Langkahnya
+          </h1>
+          <p class="font-normal mb-8 md:text-center lg:text-xl text-justify">
+            Platform konsultasi online ini berkomitmen untuk memberikan dukungan
+            berkelanjutan dan penuh perhatian kepada setiap penggunanya dalam
+            menjaga atau meningkatkan kesehatan mereka.
+          </p>
+          <div class="flex md:justify-center">
+            <a
+              href="#tentang-kami"
+              class="text-base font-semibold py-3 px-8 bg-teal-500 rounded-md hover:bg-teal-400 trasition duration-300 ease-in-out lg:text-xl text-white"
+              >Lihat selengkapnya</a
+            >
+          </div>
         </div>
+        <div class="w-full pb-20">
+          <div class="mt-10">
+            <img src="img/main1.png" alt="" class="w-full lg:w-2/6 mx-auto" />
+          </div>
+        </div>
+      </div>
     </section>
     <!-- home section end -->
 
     <!-- tentang kami section start -->
     <section id="tentang-kami" class="pt-40 flex justify-center min-h-scree">
-        <div class="container">
-            <div class="flex flex-wrap">
-                <h1 class="font-semibold text-2xl mb-10 md:text-3xl lg:text-4xl text-center w-full">
-                    Tentang Kami
-                </h1>
-                <div class="w-full px-8 md:px-12 lg:px-20 lg:w-1/2">
-                    <div class="mt-10 relative">
-                        <img src="img/main2.png" alt="" class="max-w-full mx-auto" />
-                    </div>
-                </div>
-                <div class="w-full self-center px-8 md:px-12 lg:px-20 lg:w-1/2">
-                    <h1 class="font-semibold text-2xl mt-3 mb-2 md:text-3xl lg:text-4xl">
-                        <span class="text-icon">Hidupkan</span> Kembali Harapan
-                    </h1>
-                    <h1 class="font-semibold text-2xl mb-3 md:text-3xl lg:text-4xl">
-                        Pulihkan Kesehatan Anda
-                    </h1>
-                    <p class="font-normal mb-12 lg:text-xl lg:leading-8 text-justify md:text-start">
-                        ReLive adalah sebuah platform yang peduli akan kesehatan mental.
-                        Kami memiliki cita-cita untuk membantu dan mendampingi semua
-                        khalayak yang mengalami gangguan kesehatan mental dalam perjalanan
-                        mereka menuju kestabilan mental. Kami percaya dengan bantuan yang
-                        cepat dan tepat, mereka dapat merasakan kelegaan, layaknya seperti
-                        “hidup kembali”.
-                    </p>
-                </div>
+      <div class="container">
+        <div class="flex flex-wrap">
+          <h1
+            class="font-semibold text-2xl mb-10 md:text-3xl lg:text-4xl text-center w-full"
+          >
+            Tentang Kami
+          </h1>
+          <div class="w-full px-8 md:px-12 lg:px-20 lg:w-1/2">
+            <div class="mt-10 relative">
+              <img src="img/main2.png" alt="" class="max-w-full mx-auto" />
             </div>
+          </div>
+          <div class="w-full self-center px-8 md:px-12 lg:px-20 lg:w-1/2">
+            <h1
+              class="font-semibold text-2xl mt-3 mb-2 md:text-3xl lg:text-4xl"
+            >
+              <span class="text-icon">Hidupkan</span> Kembali Harapan
+            </h1>
+            <h1 class="font-semibold text-2xl mb-3 md:text-3xl lg:text-4xl">
+              Pulihkan Kesehatan Anda
+            </h1>
+            <p
+              class="font-normal mb-12 lg:text-xl lg:leading-8 text-justify md:text-start"
+            >
+              ReLive adalah sebuah platform yang peduli akan kesehatan mental.
+              Kami memiliki cita-cita untuk membantu dan mendampingi semua
+              khalayak yang mengalami gangguan kesehatan mental dalam perjalanan
+              mereka menuju kestabilan mental. Kami percaya dengan bantuan yang
+              cepat dan tepat, mereka dapat merasakan kelegaan, layaknya seperti
+              “hidup kembali”.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
     <!-- tentang kami section end -->
 
     <!-- layanan section start -->
     <section id="layanan" class="pt-40 flex justify-center">
-        <div class="container">
-            <div class="flex flex-wrap">
-                <div class="w-full self-center px-8 md:px-12 lg:px-20">
-                    <h1 class="font-semibold text-2xl mb-20 md:text-3xl lg:text-4xl text-center w-full">
-                        Kenapa kamu harus memilih ReLive?
-                    </h1>
-                    <div class="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-10">
-                        <div class="grid-layanan">
-                            <div class="flex justify-start gap-6 items-center w-full mb-4">
-                                <div class="grid-layanan-icon">
-                                    <a href="#" class="text-3xl">
-                                        <i data-lucide="audio-lines"></i>
-                                    </a>
-                                </div>
-                                <h2 class="font-semibold md:text-xl">
-                                    Kesiapan untuk Mendengarkan
-                                </h2>
-                            </div>
-                            <p class\></p>
-                            <p class="leading-7 lg:text-lg md:text-start text-justify">
-                                Ini menegaskan bahwa setiap masalah, besar atau kecil, penting
-                                dan akan ditanggapi dengan serius. Konsultan di platform ini
-                                dilatih untuk mendengarkan secara aktif, memastikan bahwa
-                                setiap pengguna merasa didengar dan dipahami.
-                            </p>
-                        </div>
-                        <div class="grid-layanan">
-                            <div class="flex justify-start gap-6 items-center w-full mb-4">
-                                <div class="grid-layanan-icon">
-                                    <a href="#" class="text-3xl">
-                                        <i data-lucide="hand-heart"></i>
-                                    </a>
-                                </div>
-                                <h2 class="font-semibold md:text-xl">
-                                    Dukungan yang Berkelanjutan
-                                </h2>
-                            </div>
-                            <p class="leading-7 lg:text-lg md:text-start text-justify">
-                                Ini bukan hanya tentang sesi konsultasi tunggal, melainkan
-                                tentang membangun hubungan jangka panjang dimana pengguna
-                                dapat merasa nyaman untuk kembali dan mendapatkan bantuan
-                                kapan pun dan dimana pun mereka membutuhkannya.
-                            </p>
-                        </div>
-                        <div class="grid-layanan">
-                            <div class="flex justify-start gap-6 items-center w-full mb-4">
-                                <div class="grid-layanan-icon">
-                                    <a href="#" class="text-3xl">
-                                        <i data-lucide="folder-lock"></i>
-                                    </a>
-                                </div>
-                                <h2 class="font-semibold md:text-xl">
-                                    Keramahan dan Keamanan
-                                </h2>
-                            </div>
-                            <p class="leading-7 lg:text-lg md:text-start text-justify">
-                                Mencerminkan suasana yang ramah dan penuh keamanan yang
-                                ditawarkan oleh platform. Pengguna dijamin dapat berbagi
-                                informasi pribadi mereka tanpa kekhawatiran tentang privasi,
-                                yang sangat penting dalam konteks kesehatan mental dan fisik.
-                            </p>
-                        </div>
-                    </div>
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-8 md:px-12 lg:px-20">
+            <h1
+              class="font-semibold text-2xl mb-20 md:text-3xl lg:text-4xl text-center w-full"
+            >
+              Kenapa kamu harus memilih ReLive?
+            </h1>
+            <div class="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-10">
+              <div class="grid-layanan">
+                <div class="flex justify-start gap-6 items-center w-full mb-4">
+                  <div class="grid-layanan-icon">
+                    <a href="#" class="text-3xl">
+                      <i data-lucide="audio-lines"></i>
+                    </a>
+                  </div>
+                  <h2 class="font-semibold md:text-xl">
+                    Kesiapan untuk Mendengarkan
+                  </h2>
                 </div>
+                <p class\></p>
+                <p class="leading-7 lg:text-lg md:text-start text-justify">
+                  Ini menegaskan bahwa setiap masalah, besar atau kecil, penting
+                  dan akan ditanggapi dengan serius. Konsultan di platform ini
+                  dilatih untuk mendengarkan secara aktif, memastikan bahwa
+                  setiap pengguna merasa didengar dan dipahami.
+                </p>
+              </div>
+              <div class="grid-layanan">
+                <div class="flex justify-start gap-6 items-center w-full mb-4">
+                  <div class="grid-layanan-icon">
+                    <a href="#" class="text-3xl">
+                      <i data-lucide="hand-heart"></i>
+                    </a>
+                  </div>
+                  <h2 class="font-semibold md:text-xl">
+                    Dukungan yang Berkelanjutan
+                  </h2>
+                </div>
+                <p class="leading-7 lg:text-lg md:text-start text-justify">
+                  Ini bukan hanya tentang sesi konsultasi tunggal, melainkan
+                  tentang membangun hubungan jangka panjang dimana pengguna
+                  dapat merasa nyaman untuk kembali dan mendapatkan bantuan
+                  kapan pun dan dimana pun mereka membutuhkannya.
+                </p>
+              </div>
+              <div class="grid-layanan">
+                <div class="flex justify-start gap-6 items-center w-full mb-4">
+                  <div class="grid-layanan-icon">
+                    <a href="#" class="text-3xl">
+                      <i data-lucide="folder-lock"></i>
+                    </a>
+                  </div>
+                  <h2 class="font-semibold md:text-xl">
+                    Keramahan dan Keamanan
+                  </h2>
+                </div>
+                <p class="leading-7 lg:text-lg md:text-start text-justify">
+                  Mencerminkan suasana yang ramah dan penuh keamanan yang
+                  ditawarkan oleh platform. Pengguna dijamin dapat berbagi
+                  informasi pribadi mereka tanpa kekhawatiran tentang privasi,
+                  yang sangat penting dalam konteks kesehatan mental dan fisik.
+                </p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- layanan section end -->
 
     <!-- layanan main section start -->
     <section id="layanan-main" class="pt-10 mb-12 flex justify-center">
-        <div class="container">
-            <div class="flex flex-wrap">
-                <div class="w-full self-center px-8 md:px-12 lg:px-20 lg:w-1/2">
-                    <h1 class="font-semibold text-2xl mt-3 mb-2 md:text-3xl lg:text-4xl">
-                        Dari Hati ke Hati,
-                    </h1>
-                    <h1 class="font-semibold text-2xl mb-3 md:text-3xl lg:text-4xl">
-                        <span class="text-icon">Konsultan</span> Anda Siap Mendengar.
-                    </h1>
-                    <p class="mb-12 leading-relaxed text-justify lg:text-lg">
-                        Pada platform ini tidak hanya sebagai penyedia layanan
-                        profesional, tapi sebagai pendengar yang setia dan empatik.
-                        Pendekatan "dari hati ke hati" menyiratkan bahwa interaksi antara
-                        konsultan dan pengguna dilakukan dengan kehangatan dan pengertian
-                        mendalam.
-                    </p>
-                    <a href="#"
-                        class="text-base font-semibold py-3 px-8 bg-teal-500 rounded-md hover:bg-teal-400 trasition duration-300 ease-in-out lg:text-xl text-white">Konsultasi
-                        Sekarang
-                    </a>
-                </div>
-                <div class="w-full self-end px-4 lg:w-1/2">
-                    <div class="mt-10 relative">
-                        <img src="img/main3.png" alt="" class="max-w-full mx-auto" />
-                    </div>
-                </div>
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-8 md:px-12 lg:px-20 lg:w-1/2">
+            <h1
+              class="font-semibold text-2xl mt-3 mb-2 md:text-3xl lg:text-4xl"
+            >
+              Dari Hati ke Hati,
+            </h1>
+            <h1 class="font-semibold text-2xl mb-3 md:text-3xl lg:text-4xl">
+              <span class="text-icon">Konsultan</span> Anda Siap Mendengar.
+            </h1>
+            <p class="mb-12 leading-relaxed text-justify lg:text-lg">
+              Pada platform ini tidak hanya sebagai penyedia layanan
+              profesional, tapi sebagai pendengar yang setia dan empatik.
+              Pendekatan "dari hati ke hati" menyiratkan bahwa interaksi antara
+              konsultan dan pengguna dilakukan dengan kehangatan dan pengertian
+              mendalam.
+            </p>
+            <a
+              href="#"
+              class="text-base font-semibold py-3 px-8 bg-teal-500 rounded-md hover:bg-teal-400 trasition duration-300 ease-in-out lg:text-xl text-white"
+              >Konsultasi Sekarang
+            </a>
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="mt-10 relative">
+              <img src="img/main3.png" alt="" class="max-w-full mx-auto" />
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- layanan main section end -->
 
     <!-- layanan artikel section start -->
     <section id="artikel" class="pt-32 mb-12 min-h-screen flex justify-center">
-        <div class="container">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-8 md:px-12 lg:px-20">
+            <h1
+              class="font-semibold text-2xl mb-20 md:text-3xl lg:text-4xl text-center w-full"
+            >
+              Artikel
+            </h1>
             <div class="flex flex-wrap">
-                <div class="w-full self-center px-8 md:px-12 lg:px-20">
-                    <h1 class="font-semibold text-2xl mb-20 md:text-3xl lg:text-4xl text-center w-full">
-                        Artikel
-                    </h1>
-                    <div class="flex flex-wrap">
-                        <div class="list-artikel">
-                            <img src="img/artikel1.jpg" alt="" class="rounded-md md:w-2/6 lg:w-1/6" />
-                            <div>
-                                <h2 class="font-semibold md:text-2xl lg:3xl mb-2">
-                                    Pentingnya Vaksinasi dalam Mencegah Penyakit Menular
-                                </h2>
-                                <p class="text-justify text-sm md:text-base lg:leading-7">
-                                    Artikel ini membahas mengenai bagaimana vaksinasi berperan
-                                    penting dalam mencegah penyebaran penyakit menular. Dengan
-                                    data dan penelitian terkini, artikel ini akan menjelaskan
-                                    efektivitas vaksin dalam melindungi individu dan masyarakat
-                                    dari berbagai penyakit berbahaya.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="list-artikel">
-                            <img src="img/artikel2.jpg" alt="" class="rounded-md md:w-2/6 lg:w-1/6" />
-                            <div>
-                                <h2 class="font-semibold md:text-2xl lg:3xl mb-2">
-                                    Dampak Kurang Tidur Terhadap Kesehatan Mental dan Fisik
-                                </h2>
-                                <p class="text-justify text-sm md:text-base lg:leading-7">
-                                    Artikel ini akan menggali informasi tentang konsekuensi dari
-                                    kurang tidur terhadap kesehatan mental dan fisik seseorang.
-                                    Dari kelelahan kronis hingga masalah kesehatan serius,
-                                    pembaca akan memahami pentingnya kualitas tidur yang baik
-                                    dan cara-cara untuk meningkatkan kebiasaan tidur.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="list-artikel">
-                            <img src="img/artikel3.jpg" alt="" class="rounded-md md:w-2/6 lg:w-1/6" />
-                            <div>
-                                <h2 class="font-semibold md:text-2xl lg:3xl mb-2">
-                                    Manfaat Olahraga Teratur bagi Kesehatan Mental dan Fisik
-                                </h2>
-                                <p class="text-justify text-sm md:text-base lg:leading-7">
-                                    Artikel ini menjelaskan pentingnya olahraga teratur dalam
-                                    menjaga kesehatan mental dan fisik. Mulai dari mengurangi
-                                    stres hingga meningkatkan kebugaran jantung, olahraga
-                                    memiliki dampak positif yang signifikan pada kesejahteraan
-                                    keseluruhan.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+              <div class="list-artikel">
+                <img
+                  src="img/artikel1.jpg"
+                  alt=""
+                  class="rounded-md md:w-2/6 lg:w-1/6"
+                />
+                <div>
+                  <h2 class="font-semibold md:text-2xl lg:3xl mb-2">
+                    Pentingnya Vaksinasi dalam Mencegah Penyakit Menular
+                  </h2>
+                  <p class="text-justify text-sm md:text-base lg:leading-7">
+                    Artikel ini membahas mengenai bagaimana vaksinasi berperan
+                    penting dalam mencegah penyebaran penyakit menular. Dengan
+                    data dan penelitian terkini, artikel ini akan menjelaskan
+                    efektivitas vaksin dalam melindungi individu dan masyarakat
+                    dari berbagai penyakit berbahaya.
+                  </p>
                 </div>
+              </div>
+              <div class="list-artikel">
+                <img
+                  src="img/artikel2.jpg"
+                  alt=""
+                  class="rounded-md md:w-2/6 lg:w-1/6"
+                />
+                <div>
+                  <h2 class="font-semibold md:text-2xl lg:3xl mb-2">
+                    Dampak Kurang Tidur Terhadap Kesehatan Mental dan Fisik
+                  </h2>
+                  <p class="text-justify text-sm md:text-base lg:leading-7">
+                    Artikel ini akan menggali informasi tentang konsekuensi dari
+                    kurang tidur terhadap kesehatan mental dan fisik seseorang.
+                    Dari kelelahan kronis hingga masalah kesehatan serius,
+                    pembaca akan memahami pentingnya kualitas tidur yang baik
+                    dan cara-cara untuk meningkatkan kebiasaan tidur.
+                  </p>
+                </div>
+              </div>
+              <div class="list-artikel">
+                <img
+                  src="img/artikel3.jpg"
+                  alt=""
+                  class="rounded-md md:w-2/6 lg:w-1/6"
+                />
+                <div>
+                  <h2 class="font-semibold md:text-2xl lg:3xl mb-2">
+                    Manfaat Olahraga Teratur bagi Kesehatan Mental dan Fisik
+                  </h2>
+                  <p class="text-justify text-sm md:text-base lg:leading-7">
+                    Artikel ini menjelaskan pentingnya olahraga teratur dalam
+                    menjaga kesehatan mental dan fisik. Mulai dari mengurangi
+                    stres hingga meningkatkan kebugaran jantung, olahraga
+                    memiliki dampak positif yang signifikan pada kesejahteraan
+                    keseluruhan.
+                  </p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- layanan artikel section end -->
 
     <script src="src/index.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
-        lucide.createIcons();
+      lucide.createIcons();
     </script>
-</body>
-
+  </body>
 </html>
